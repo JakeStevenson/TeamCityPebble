@@ -1,0 +1,1 @@
+{"count":1,"href":"/httpAuth/app/rest/builds?locator=running:true","build":[{"id":23624,"buildTypeId":"bt2","number":"8416","status":"SUCCESS","state":"running","running":true,"percentageComplete":2,"branchName":"refs/heads/Development","defaultBranch":true,"href":"/httpAuth/app/rest/builds/id:23624","webUrl":"http://173.1.25.130:81/viewLog.html?buildId=23624&buildTypeId=bt2"}]}
