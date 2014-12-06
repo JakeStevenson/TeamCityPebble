@@ -32,7 +32,7 @@ main.on('click', 'up', function(e) {
     }]
   });
   menu.on('select', function(e) {
-	var time = getTimeRemaining.getTimeRemaining(23624).then(function(time){
+	var time = timeRemaining.getTimeRemaining(23624).then(function(time){
 		console.log('Time shown:' + time);
 	});
     console.log('Selected item #' + e.itemIndex + ' of section #' + e.sectionIndex);
