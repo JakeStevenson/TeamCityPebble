@@ -9,7 +9,9 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "browserify": "~6.3.3",
     "xml2js": "~0.4.4",
-    "browserify": "~6.3.3"
+    "underscore": "~1.7.0",
+    "q": "~1.0.1"
   }
 }

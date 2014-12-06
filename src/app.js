@@ -6,6 +6,7 @@
 
 var UI = require('ui');
 var Vector2 = require('vector2');
+var timeRemaining = require('getRemainingTime');
 
 var main = new UI.Card({
   title: 'Build View',
@@ -17,6 +18,7 @@ var main = new UI.Card({
 main.show();
 
 main.on('click', 'up', function(e) {
+
   var menu = new UI.Menu({
     sections: [{
       items: [{
@@ -30,6 +32,9 @@ main.on('click', 'up', function(e) {
     }]
   });
   menu.on('select', function(e) {
+	var time = getTimeRemaining.getTimeRemaining(23624).then(function(time){
+		console.log('Time shown:' + time);
+	});
     console.log('Selected item #' + e.itemIndex + ' of section #' + e.sectionIndex);
     console.log('The item is titled "' + e.item.title + '"');
   });
