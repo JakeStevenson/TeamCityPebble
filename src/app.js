@@ -6,7 +6,7 @@
 
 var UI = require('ui');
 var Vector2 = require('vector2');
-var timeRemaining = require('./fullGetRemainingTime');
+var timeRemaining = require('./testRemaining.js');
 console.log(timeRemaining.getTimeRemaining(23624));
 
 var main = new UI.Card({
