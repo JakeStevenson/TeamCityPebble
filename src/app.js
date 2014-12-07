@@ -32,7 +32,6 @@ main.on('click', 'up', function() {
     }]
   });
   menu.on('select', function(e) {
-	console.dir(timeRemaining);
 	timeRemaining.getTimeRemaining(23624).then(function(time){
 		console.log('Time shown:' + time);
 	});
