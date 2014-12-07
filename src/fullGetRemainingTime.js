@@ -3,6 +3,8 @@ var Q = require('q');
 var _ = require('underscore');
 var parseString = require('xml2js').parseString;
 
+console.log("Loaded getTimeRemaining");
+
 var timeChecker = exports;
 exports.getTimeRemaining = function(buildId){
 		//Sample of AJAX request that'll give us times remaining for current builds -- /ajax.html?getRunningBuilds=1
