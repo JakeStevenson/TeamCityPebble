@@ -17,7 +17,7 @@ var main = new UI.Card({
 
 main.show();
 
-main.on('click', 'up', function(e) {
+main.on('click', 'up', function() {
 
   var menu = new UI.Menu({
     sections: [{
@@ -32,7 +32,8 @@ main.on('click', 'up', function(e) {
     }]
   });
   menu.on('select', function(e) {
-	var time = timeRemaining.getTimeRemaining(23624).then(function(time){
+	console.log(timeRemaining);
+	timeRemaining.getTimeRemaining(23624).then(function(time){
 		console.log('Time shown:' + time);
 	});
     console.log('Selected item #' + e.itemIndex + ' of section #' + e.sectionIndex);
@@ -41,7 +42,7 @@ main.on('click', 'up', function(e) {
   menu.show();
 });
 
-main.on('click', 'select', function(e) {
+main.on('click', 'select', function() {
   var wind = new UI.Window();
   var textfield = new UI.Text({
     position: new Vector2(0, 50),
@@ -54,7 +55,7 @@ main.on('click', 'select', function(e) {
   wind.show();
 });
 
-main.on('click', 'down', function(e) {
+main.on('click', 'down', function() {
   var card = new UI.Card();
   card.title('A Card');
   card.subtitle('Is a Window');
