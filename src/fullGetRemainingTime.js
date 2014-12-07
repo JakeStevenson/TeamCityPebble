@@ -5,8 +5,8 @@ var parseString = require('xml2js').parseString;
 
 console.log("Loaded getTimeRemaining");
 
-var timeChecker = exports;
-timeChecker.getTimeRemaining = function(buildId){
+var timeChecker = {
+	getTimeRemaining: function(buildId){
 		//Sample of AJAX request that'll give us times remaining for current builds -- /ajax.html?getRunningBuilds=1
 		var sampleXML = ' <response><build buildId="23624" buildTypeId="bt2" text="build.proj.teamcity" successful="true" buildTypeSuccessful="true" showAsExceeded="false" showOvertimedIcon="false" showTimeLeft="true" totalEstimate="20m:58s" remainingTime="16m:02s" exceededEstimatedDurationTime="&lt; 1s" elapsedTime="5m:34s" completedPercent="26" hasArtifacts="false" /></response>';
 
@@ -21,7 +21,10 @@ timeChecker.getTimeRemaining = function(buildId){
 				});
 			});
 			return deferred.promise;
-		};
+		}
+	};
+
+	this.esports  = timeChecker;
 
 },{"q":2,"underscore":4,"xml2js":7}],2:[function(require,module,exports){
 (function (process){
