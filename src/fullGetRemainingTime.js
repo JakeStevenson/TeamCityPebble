@@ -8,6 +8,6 @@ var timeChecker = {
 	}
 };
 
-this.esports  = timeChecker;
+this.exports  = timeChecker;
 
 },{}]},{},[1]);
