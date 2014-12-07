@@ -32,9 +32,12 @@ main.on('click', 'up', function() {
     }]
   });
   menu.on('select', function(e) {
+	  console.log(timeRemaining.getTimeRemaining(23624));
+	  /*
 	timeRemaining.getTimeRemaining(23624).then(function(time){
 		console.log('Time shown:' + time);
 	});
+	*/
     console.log('Selected item #' + e.itemIndex + ' of section #' + e.sectionIndex);
     console.log('The item is titled "' + e.item.title + '"');
   });
